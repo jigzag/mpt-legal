@@ -1,0 +1,131 @@
+<title>MoneyPrinterTurbo Terms</title>
+<style>
+  :root {
+    --bg: #faf9f6;
+    --surface: #ffffff;
+    --text: #1b1e24;
+    --muted: #5b6470;
+    --border: #e4e1d8;
+    --accent: #2d6e7e;
+    --accent-ink: #ffffff;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #14161a;
+      --surface: #1b1e24;
+      --text: #e7e9ec;
+      --muted: #9aa3ad;
+      --border: #2c3038;
+      --accent: #6fb8c9;
+      --accent-ink: #0b1416;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #14161a;
+    --surface: #1b1e24;
+    --text: #e7e9ec;
+    --muted: #9aa3ad;
+    --border: #2c3038;
+    --accent: #6fb8c9;
+    --accent-ink: #0b1416;
+  }
+
+  * { box-sizing: border-box; }
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: "IBM Plex Sans", system-ui, sans-serif;
+    line-height: 1.65;
+    padding: 4rem 1.5rem 6rem;
+  }
+  main {
+    max-width: 680px;
+    margin: 0 auto;
+  }
+  .eyebrow {
+    font-family: "IBM Plex Mono", ui-monospace, monospace;
+    font-size: 0.75rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 0.75rem;
+  }
+  h1 {
+    font-family: "Source Serif 4", Georgia, serif;
+    font-size: clamp(1.9rem, 4vw, 2.6rem);
+    font-weight: 600;
+    margin: 0 0 0.5rem;
+    text-wrap: balance;
+  }
+  .meta {
+    color: var(--muted);
+    font-size: 0.9rem;
+    margin: 0 0 2.5rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid var(--border);
+  }
+  section {
+    margin: 2.25rem 0;
+  }
+  h2 {
+    font-family: "Source Serif 4", Georgia, serif;
+    font-size: 1.15rem;
+    font-weight: 600;
+    display: flex;
+    gap: 0.6rem;
+    align-items: baseline;
+    margin: 0 0 0.75rem;
+  }
+  h2 .num {
+    font-family: "IBM Plex Mono", ui-monospace, monospace;
+    font-size: 0.85rem;
+    color: var(--accent);
+    min-width: 1.6rem;
+  }
+  p { margin: 0 0 0.9rem; color: var(--text); }
+  p:last-child { margin-bottom: 0; }
+  .muted { color: var(--muted); }
+  footer {
+    margin-top: 3rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--border);
+    color: var(--muted);
+    font-size: 0.85rem;
+  }
+  a { color: var(--accent); }
+</style>
+
+<main>
+  <p class="eyebrow">MoneyPrinterTurbo Auto Upload</p>
+  <h1>利用規約</h1>
+  <p class="meta">最終更新日: 2026年9月9日 &nbsp;&middot;&nbsp; 個人開発ツール</p>
+
+  <section>
+    <h2><span class="num">01</span>このアプリについて</h2>
+    <p>MoneyPrinterTurbo Auto Uploadは、個人が運用する動画自動生成・投稿ツールです。テーマに沿ってAIが動画を生成し、運営者本人が管理するYouTube・Instagram・TikTokアカウントへ投稿します。第三者への配布や、他のユーザーによる利用は想定していません。</p>
+  </section>
+
+  <section>
+    <h2><span class="num">02</span>利用対象</h2>
+    <p>本アプリは開発者本人のアカウント運用のみを目的としています。開発者以外のTikTokアカウントに対する投稿・アクセスは行いません。</p>
+  </section>
+
+  <section>
+    <h2><span class="num">03</span>投稿の内容</h2>
+    <p>投稿される動画は、ストック素材とAI生成のナレーション・字幕で構成された短編動画です。違法・有害なコンテンツの投稿は行いません。</p>
+  </section>
+
+  <section>
+    <h2><span class="num">04</span>免責事項</h2>
+    <p>本アプリは開発中の個人ツールであり、動作の完全性や継続性を保証するものではありません。TikTok側の仕様変更やAPI制限により、機能が予告なく変更・停止される場合があります。</p>
+  </section>
+
+  <section>
+    <h2><span class="num">05</span>お問い合わせ</h2>
+    <p class="muted">本規約に関するお問い合わせは、開発者本人までご連絡ください。</p>
+  </section>
+
+  <footer>
+    <p>MoneyPrinterTurbo Auto Upload &mdash; 個人開発の動画自動投稿ツール</p>
+  </footer>
+</main>

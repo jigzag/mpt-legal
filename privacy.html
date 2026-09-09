@@ -1,0 +1,161 @@
+<title>MoneyPrinterTurbo Privacy</title>
+<style>
+  :root {
+    --bg: #faf9f6;
+    --surface: #ffffff;
+    --text: #1b1e24;
+    --muted: #5b6470;
+    --border: #e4e1d8;
+    --accent: #2d6e7e;
+    --accent-ink: #ffffff;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #14161a;
+      --surface: #1b1e24;
+      --text: #e7e9ec;
+      --muted: #9aa3ad;
+      --border: #2c3038;
+      --accent: #6fb8c9;
+      --accent-ink: #0b1416;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #14161a;
+    --surface: #1b1e24;
+    --text: #e7e9ec;
+    --muted: #9aa3ad;
+    --border: #2c3038;
+    --accent: #6fb8c9;
+    --accent-ink: #0b1416;
+  }
+
+  * { box-sizing: border-box; }
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: "IBM Plex Sans", system-ui, sans-serif;
+    line-height: 1.65;
+    padding: 4rem 1.5rem 6rem;
+  }
+  main {
+    max-width: 680px;
+    margin: 0 auto;
+  }
+  .eyebrow {
+    font-family: "IBM Plex Mono", ui-monospace, monospace;
+    font-size: 0.75rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 0.75rem;
+  }
+  h1 {
+    font-family: "Source Serif 4", Georgia, serif;
+    font-size: clamp(1.9rem, 4vw, 2.6rem);
+    font-weight: 600;
+    margin: 0 0 0.5rem;
+    text-wrap: balance;
+  }
+  .meta {
+    color: var(--muted);
+    font-size: 0.9rem;
+    margin: 0 0 2.5rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid var(--border);
+  }
+  section {
+    margin: 2.25rem 0;
+  }
+  h2 {
+    font-family: "Source Serif 4", Georgia, serif;
+    font-size: 1.15rem;
+    font-weight: 600;
+    display: flex;
+    gap: 0.6rem;
+    align-items: baseline;
+    margin: 0 0 0.75rem;
+  }
+  h2 .num {
+    font-family: "IBM Plex Mono", ui-monospace, monospace;
+    font-size: 0.85rem;
+    color: var(--accent);
+    min-width: 1.6rem;
+  }
+  p { margin: 0 0 0.9rem; color: var(--text); }
+  p:last-child { margin-bottom: 0; }
+  ul { margin: 0 0 0.9rem; padding-left: 1.2rem; }
+  li { margin-bottom: 0.4rem; }
+  .muted { color: var(--muted); }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1rem 0;
+    font-size: 0.92rem;
+  }
+  th, td {
+    text-align: left;
+    padding: 0.55rem 0.7rem;
+    border-bottom: 1px solid var(--border);
+  }
+  th {
+    font-family: "IBM Plex Mono", ui-monospace, monospace;
+    font-size: 0.72rem;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--muted);
+    font-weight: 500;
+  }
+  footer {
+    margin-top: 3rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--border);
+    color: var(--muted);
+    font-size: 0.85rem;
+  }
+</style>
+
+<main>
+  <p class="eyebrow">MoneyPrinterTurbo Auto Upload</p>
+  <h1>プライバシーポリシー</h1>
+  <p class="meta">最終更新日: 2026年9月9日 &nbsp;&middot;&nbsp; 個人開発ツール</p>
+
+  <section>
+    <h2><span class="num">01</span>取得する情報</h2>
+    <p>本アプリは、開発者本人が保有するYouTube・Instagram・TikTokアカウントに動画を投稿するため、以下の情報のみを扱います。</p>
+    <table>
+      <thead>
+        <tr><th>種類</th><th>用途</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>OAuthアクセストークン</td><td>投稿API呼び出しの認証のみ</td></tr>
+        <tr><td>投稿した動画ファイル</td><td>各プラットフォームへのアップロード</td></tr>
+        <tr><td>投稿の再生数・いいね数</td><td>開発者本人が結果を確認するため</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section>
+    <h2><span class="num">02</span>第三者への提供</h2>
+    <p>取得した情報を第三者に販売・共有・提供することはありません。データは開発者本人が管理するローカル環境にのみ保存されます。</p>
+  </section>
+
+  <section>
+    <h2><span class="num">03</span>保存期間</h2>
+    <p>アクセストークンは投稿処理のために保持されます。生成した動画ファイルは、各プラットフォームへの投稿に成功した時点でローカルから削除されます。</p>
+  </section>
+
+  <section>
+    <h2><span class="num">04</span>連携の解除</h2>
+    <p>各プラットフォームの設定画面（TikTok・Google・Metaのアカウント連携設定）からいつでも本アプリのアクセス権を取り消せます。</p>
+  </section>
+
+  <section>
+    <h2><span class="num">05</span>お問い合わせ</h2>
+    <p class="muted">本ポリシーに関するお問い合わせは、開発者本人までご連絡ください。</p>
+  </section>
+
+  <footer>
+    <p>MoneyPrinterTurbo Auto Upload &mdash; 個人開発の動画自動投稿ツール</p>
+  </footer>
+</main>
